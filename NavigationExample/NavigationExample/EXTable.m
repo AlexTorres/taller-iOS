@@ -55,6 +55,7 @@
 {
 
     // Return the number of sections.
+    NSLog(@"test");
     return 1;
 }
 
