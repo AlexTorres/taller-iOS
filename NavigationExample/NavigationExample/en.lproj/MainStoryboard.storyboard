@@ -63,9 +63,31 @@
                     <view key="view" contentMode="scaleToFill" id="1qZ-QV-h7O">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="rBP-NI-sgK">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="291"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </mapView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="raF-vB-VK9">
+                                <rect key="frame" x="26" y="323" width="254" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Normal"/>
+                                    <segment title="Satelital"/>
+                                    <segment title="Hibrido"/>
+                                </segments>
+                                <connections>
+                                    <action selector="type_of_map:" destination="DMV-S1-lBB" eventType="valueChanged" id="wuO-Ra-QrZ"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="TZ8-QZ-hg6"/>
+                    <connections>
+                        <outlet property="map_view" destination="rBP-NI-sgK" id="wqP-DD-etf"/>
+                        <outlet property="type_map_control" destination="raF-vB-VK9" id="seq-ec-HeV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3RQ-Tt-Msh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -75,6 +97,11 @@
     <classes>
         <class className="EXDetailViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/EXDetailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="type_of_map:"/>
+                <relationship kind="outlet" name="map_view" candidateClass="MKMapView"/>
+                <relationship kind="outlet" name="type_map_control" candidateClass="UISegmentedControl"/>
+            </relationships>
         </class>
         <class className="EXTable" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/EXTable.h"/>

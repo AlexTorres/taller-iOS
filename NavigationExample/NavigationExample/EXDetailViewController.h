@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
+#import "EXAnotation.h"
 
 @interface EXDetailViewController : UIViewController
 {
-     NSDictionary * city_dic;
+    NSDictionary * city_dic;
+    IBOutlet MKMapView *map_view;
+    
+    IBOutlet UISegmentedControl *type_map_control;
 }
 @property (strong) NSDictionary * city_dic;
 
