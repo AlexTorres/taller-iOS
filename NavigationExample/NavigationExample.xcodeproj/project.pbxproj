@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D4D618116149A7D00B684C9 /* EXDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4D618016149A7D00B684C9 /* EXDetailViewController.m */; };
 		5DA92C1215E7112900DD8D59 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA92C1115E7112900DD8D59 /* UIKit.framework */; };
 		5DA92C1415E7112900DD8D59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA92C1315E7112900DD8D59 /* Foundation.framework */; };
 		5DA92C1615E7112900DD8D59 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA92C1515E7112900DD8D59 /* CoreGraphics.framework */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D4D617F16149A7D00B684C9 /* EXDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXDetailViewController.h; sourceTree = "<group>"; };
+		5D4D618016149A7D00B684C9 /* EXDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXDetailViewController.m; sourceTree = "<group>"; };
 		5DA92C0D15E7112900DD8D59 /* NavigationExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DA92C1115E7112900DD8D59 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5DA92C1315E7112900DD8D59 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -88,6 +91,8 @@
 				5DA92C1815E7112900DD8D59 /* Supporting Files */,
 				5DA92C2E15E7162E00DD8D59 /* EXTable.h */,
 				5DA92C2F15E7162E00DD8D59 /* EXTable.m */,
+				5D4D617F16149A7D00B684C9 /* EXDetailViewController.h */,
+				5D4D618016149A7D00B684C9 /* EXDetailViewController.m */,
 			);
 			path = NavigationExample;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 				5DA92C2215E7112900DD8D59 /* EXAppDelegate.m in Sources */,
 				5DA92C2815E7112900DD8D59 /* EXViewController.m in Sources */,
 				5DA92C3015E7162E00DD8D59 /* EXTable.m in Sources */,
+				5D4D618116149A7D00B684C9 /* EXDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +292,7 @@
 				5DA92C2D15E7112900DD8D59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

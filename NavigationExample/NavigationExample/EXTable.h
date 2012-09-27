@@ -7,12 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EXDetailViewController.h"
 
 @interface EXTable : UITableViewController
 {
-     NSArray *table_array;
+     NSArray                * table_array;
+     NSMutableData          * receivedData;
 
 }
-@property (strong)  NSArray *table_array;
+
+@property (strong)  NSArray                     * table_array;
+@property (nonatomic,retain) NSMutableData      * receivedData;
 
 @end

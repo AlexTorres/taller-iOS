@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2549" systemVersion="12A269" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="cqX-S6-0XL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="12C54" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="cqX-S6-0XL">
     <dependencies>
-        <deployment defaultVersion="1296" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1498"/>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="WO8-tN-oQ1">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="L8Y-OV-wsU" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="cqX-S6-0XL" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="lUa-gc-xQb">
@@ -20,13 +19,13 @@
                         <segue destination="gLI-4d-Sh2" kind="relationship" relationship="rootViewController" id="Dcr-qf-pjC"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L8Y-OV-wsU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="532" y="115"/>
         </scene>
         <!--Table-->
         <scene sceneID="8H7-Vo-k8e">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GmC-5Q-ZEc" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="gLI-4d-Sh2" customClass="EXTable" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="LxN-YO-MJL">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
@@ -41,9 +40,6 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
-                                <connections>
-                                    <segue destination="DMV-S1-lBB" kind="push" id="rbC-7P-4gh"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -52,15 +48,18 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="kmJ-VQ-ykn"/>
+                    <connections>
+                        <segue destination="DMV-S1-lBB" kind="push" identifier="go_to_detail" id="reg-S3-lmQ"/>
+                    </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GmC-5Q-ZEc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="997" y="122"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="OKx-1Y-PUp">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3RQ-Tt-Msh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="DMV-S1-lBB" sceneMemberID="viewController">
+                <viewController id="DMV-S1-lBB" customClass="EXDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1qZ-QV-h7O">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -68,11 +67,15 @@
                     </view>
                     <navigationItem key="navigationItem" id="TZ8-QZ-hg6"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3RQ-Tt-Msh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1474" y="115"/>
         </scene>
     </scenes>
     <classes>
+        <class className="EXDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EXDetailViewController.h"/>
+        </class>
         <class className="EXTable" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/EXTable.h"/>
         </class>
